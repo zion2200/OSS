@@ -1,3 +1,1 @@
-print("hello, world!")
-
-print("for update Readme")
+print("hello world")
