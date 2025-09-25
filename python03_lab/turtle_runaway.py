@@ -65,6 +65,30 @@ class RunawayGame:
     
     def step(self):
         # TODO) You can do something here and follows.
+         # Game Over setting
+        if self.count_timer <= 0:
+            self.count_timer = 0.0  # set counter 0.0
+            # final draw
+            self.catched.clear()
+            self.catched.setpos(-300, 300)
+            self.catched.write(f'catched {self.catched_runners} runners', font=('Arial', 24, 'bold'), )
+
+            self.timer.clear()
+            self.timer.setpos(150, 300)
+            self.timer.write(f'time: {round(self.count_timer,1)}sec', font=('Arial', 24, 'bold'))
+
+            # draw Game over
+            self.catched.setpos(-90, 0)
+            self.catched.write('GAME OVER', font=('Arial', 36, 'bold'))
+
+            # key solve
+            self.canvas.onkeypress(None, 'Up')
+            self.canvas.onkeypress(None, 'Down')
+            self.canvas.onkeypress(None, 'Left')
+            self.canvas.onkeypress(None, 'Right')
+
+            return  # ontimer 재등록 없이 종료
+        
         # updates
         self.count_timer -= 1/10 # 1 msec
         self.runner.run_ai(self.chaser.pos())
