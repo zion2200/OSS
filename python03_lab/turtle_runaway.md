@@ -8,8 +8,8 @@ Each tick, the runner takes **one action** (turn **or** move) and tries to head 
 - Blue = runner (AI)
 - Red = chaser (player)
 - HUD: top-left = `catched N runners` (score), top-right = remaining time (sec)
-- Background image: `background.png` (PNG/GIF recommended). The background uses **camouflage/protective coloration** to **obscure the turtles** and raise visual difficulty.
-<img src="./play_capture1.PNG" alt="Gameplay capture" width="600">
+- Background image: `./img/background.png` (PNG/GIF recommended). The background uses **camouflage/protective coloration** to **obscure the turtles** and raise visual difficulty.
+<img src="./img/play_capture1.PNG" alt="Gameplay capture" width="600">
 ---
 
 ## Features (matches current code)
