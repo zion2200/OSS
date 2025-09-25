@@ -178,7 +178,7 @@ if __name__ == '__main__':
     canvas = tk.Canvas(root, width=700, height=700)
     canvas.pack()
     screen = turtle.TurtleScreen(canvas)
-    screen.bgpic("background.png")
+    screen.bgpic("img/background.png")
 
     # TODO) Change the follows to your turtle if necessary
     runner = RandomMover(screen)
